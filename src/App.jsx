@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import Home from './components/home';
-import Dashboard from './components/dashboard';
-import About from './components/about';
+import Home from './components/Home';
+import Dashboard from './components/Dashboard';
+import About from './components/About';
 import {
   createBrowserRouter,
   RouterProvider,
