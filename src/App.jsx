@@ -7,8 +7,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './components/navbar';
-import Starting from './components/starting';
+import Navbar from './components/Navbar';
+import Starting from './components/Starting';
 
 
 
