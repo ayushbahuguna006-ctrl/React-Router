@@ -1,18 +1,33 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom"
 
 function Starting() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-200 to-green-600 p-6">
-      <h1 className="text-5xl font-bold text-white mb-6 text-center">
-        Welcome to Our Website
-      </h1>
-      <p className="text-white text-center max-w-xl mb-4">
-        This is the front page users will see when they first visit the website.
-        Navigate using the links above to explore Home, About, and Dashboard.
+     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-500 text-white p-6">
+      
+      {/* App Title */}
+      <h1 className="text-5xl font-bold mb-6 text-center">GitHub Followers Tracker</h1>
+
+      {/* Description */}
+      <p className="text-lg text-center max-w-xl mb-8">
+        Discover how many followers any GitHub user has! Enter a GitHub username in the Dashboard and instantly get the follower count.
       </p>
-      <p className="text-white text-center max-w-xl">
-        Enjoy a smooth user experience with React Router and Tailwind CSS!
-      </p>
+
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4">
+        <Link
+          to="/dashboard"
+          className="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition"
+        >
+          Go to Dashboard
+        </Link>
+        <Link
+          to="/about"
+          className="border border-white font-semibold px-6 text-center py-3 rounded hover:bg-white hover:text-blue-600 transition"
+        >
+          About App
+        </Link>
+      </div>
     </div>
   )
 }
